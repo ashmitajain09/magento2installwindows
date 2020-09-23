@@ -1,21 +1,11 @@
 
 
-# MagDock
-<img src="https://img.shields.io/badge/MagDock-Magento2.3.5%20on%20Docker-yellowgreen" /> 
+# magento2installwindows
+<img src="https://img.shields.io/badge/magento2installwindows-Magento2.3.5%20on%20Docker-yellowgreen" /> 
 <img src="https://img.shields.io/badge/php7.3.18-Magento2.3.5-blue" />
 
 ##### Install magento2 on docker with just a single command.
-###### Tested on MacOS Mojave
-
-## Installation Steps
-#### Prerequisites ####
-- Install docker-sync
-
-- Install rsync
-
-Refer for mac: https://duske.me/performant-docker-container-sync-with-docker-sync/
-
-Look for installation guide online for Windows/Linux
+###### Tested on Windows 10 Pro
 
 #### Git clone repo and install magento2.3.5 #### 
 ```sh
@@ -29,7 +19,7 @@ You can access website on below links
 
 Frontend: http://mystore.com:8030
    
-   Admin: http://mystore.com:8030/admin (username/password: admin/Passw0rd@123)
+   Admin: http://mystore.com:8030/admin (username/password: admin/admin@123)
    
 ## Commands for development
 
@@ -60,17 +50,6 @@ $ make reset-docker  #Reset docker ecosystem completely
 
 $ make restart-magento  #Restart all containers for magento2
 
-```
-
-**rSync service commands**
-```sh 
-
-$ make sync-start #Starts Rsync service
-
-$ make sync-stop  #Stops Rsync service
-
-$ make sync-clean #Resets Rsync service
-  
 ```
 `Note: I am still working to make it more flexible for others to customize the settings accorinding to here needs`
 
