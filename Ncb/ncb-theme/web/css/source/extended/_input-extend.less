@@ -1,0 +1,18 @@
+._keyfocus *:focus,
+input:not([disabled]):focus,
+textarea:not([disabled]):focus,
+select:not([disabled]):focus {
+    box-shadow: none;
+    border-color: @ncb__light-green;
+}
+
+.block-search {
+    input {
+        background-color: @ncb__gray;
+        border-radius: 4px;
+        &::placeholder {
+            color: @ncb__dark-gray;
+            font-weight: 300;
+        }
+    }
+}
